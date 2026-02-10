@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berath | Creative Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons (using CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">Berath<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="greeting">Hello, I'm</span>
+            <!-- Logo removed from here -->
+            <h1 class="name">Berath</h1>
+            <h2 class="role">Digital Design & Verification Engineer</h2>
+            <p class="hero-desc">Transforming complex logic into reliable hardware designs.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+            <!-- Social Links in Hero -->
+            <div class="hero-socials">
+                <a href="https://github.com/gitBeraTB" target="_blank" class="social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/berathbolukbas" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glowing-circle circle-1"></div>
+            <div class="glowing-circle circle-2"></div>
+            <!-- Circuit Lines SVG -->
+            <svg class="circuit-connections" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none">
+                <!-- Center Hub (Hardware) is at 50,50 -->
+
+                <!-- 1. Top (FPGA) -->
+                <path d="M50 50 L50 15" />
+                <circle cx="50" cy="15" r="1.5" fill="#3b82f6" />
+
+                <!-- 2. Top-Right (SystemVerilog) -->
+                <path d="M50 50 L85 50 L85 25" />
+                <circle cx="85" cy="25" r="1.5" fill="#3b82f6" />
+
+                <!-- 3. Right (UVM) -->
+                <path d="M50 50 L95 50" />
+                <circle cx="95" cy="50" r="1.5" fill="#3b82f6" />
+
+                <!-- 4. Bottom-Right (SoC) -->
+                <path d="M50 50 L85 50 L85 85" />
+                <circle cx="85" cy="85" r="1.5" fill="#3b82f6" />
+
+                <!-- 5. Bottom (RTL) -->
+                <path d="M50 50 L50 95" />
+                <circle cx="50" cy="95" r="1.5" fill="#3b82f6" />
+
+                <!-- 6. Bottom-Left (ASIC) -->
+                <path d="M50 50 L15 50 L15 85" />
+                <circle cx="15" cy="85" r="1.5" fill="#3b82f6" />
+
+                <!-- 7. Left (Verification) -->
+                <path d="M50 50 L5 50" />
+                <circle cx="5" cy="50" r="1.5" fill="#3b82f6" />
+
+                <!-- 8. Top-Left (Cocotb) -->
+                <path d="M50 50 L15 50 L15 25" />
+                <circle cx="15" cy="25" r="1.5" fill="#3b82f6" />
+
+                <!-- Inner Timing Path Removed -->
+                <!-- Center Node -->
+                <circle cx="50" cy="50" r="3" fill="#3b82f6" />
+            </svg>
+
+            <div class="glass-card header-card">
+                <i class="fas fa-clock"></i>
+                <span>Static Timing Analysis</span>
+            </div>
+            <div class="glass-card header-card delay-1">
+                <i class="fas fa-check-double"></i>
+                <span>Verification</span>
+            </div>
+            <div class="glass-card header-card delay-2">
+                <i class="fas fa-cubes"></i>
+                <span>ASIC</span>
+            </div>
+            <div class="glass-card header-card delay-3">
+                <i class="fas fa-project-diagram"></i>
+                <span>SoC</span>
+            </div>
+            <div class="glass-card header-card delay-4">
+                <i class="fas fa-vial"></i>
+                <span>UVM</span>
+            </div>
+            <div class="glass-card header-card delay-5">
+                <i class="fas fa-code"></i>
+                <span>SystemVerilog</span>
+            </div>
+            <div class="glass-card header-card delay-6">
+                <i class="fas fa-layer-group"></i>
+                <span>RTL</span>
+            </div>
+            <div class="glass-card header-card delay-7">
+                <i class="fab fa-python"></i>
+                <span>Cocotb</span>
+            </div>
+            <!-- Timing Analysis removed -->
+            <div class="glass-card header-card delay-9">
+                <i class="fas fa-memory"></i>
+                <span>Hardware</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-img-wrapper">
+                    <!-- Placeholder for User Image -->
+                    <!-- Logo moved to here -->
+                    <img src="Logo.png" alt="Berath Logo" class="about-logo">
+                </div>
+                <div class="about-text">
+                    <h3>Electrical & Electronics Engineer</h3>
+                    <p> I am a senior Electrical and Electronics Engineering student at Middle East Technical University
+                        (METU). My professional interest lies at the intersection of hardware and software, specifically
+                        focusing on ASIC/SoC Design, FPGA prototyping, and Digital Verification.
+                    </p>
+                    <p>I have a hands-on background in developing hardware modules using Verilog and SystemVerilog, and
+                        I am experienced in modern verification frameworks like UVM and Cocotb. From implementing
+                        asynchronous FIFO designs to working on specialized projects like the Sparse-V-Accelerator, I am
+                        driven by the challenge of designing efficient, high-performance digital systems.
+                    </p>
+                    <p>I am currently seeking opportunities to contribute to cutting-edge semiconductor technologies and
+                        digital design teams globally.</p>
+
+                    <div class="stats">
+                        <div class="stat-item glass-card">
+                            <span class="number">3+</span>
+                            <span class="label">Years Exp.</span>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <span class="number">20+</span>
+                            <span class="label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Skills Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper glass-panel">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>berat.blkbas615@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ankara, Turkiye</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/gitBeraTB" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/berathbolukbas" class="social-icon"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Berath. Built with <i class="fas fa-heart"></i> and Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
