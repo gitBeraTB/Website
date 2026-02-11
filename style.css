@@ -19,11 +19,7 @@
 
 body {
     background-color: var(--bg-color);
-    background-image: url('chip-bg.svg');
-    background-size: 100px 100px;
-    /* Aligns with SVG size */
-    background-attachment: fixed;
-    /* Parallax-like effect */
+
     color: var(--text-color);
     font-family: var(--font-main);
     overflow-x: hidden;
